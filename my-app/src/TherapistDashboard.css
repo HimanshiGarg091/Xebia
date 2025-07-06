@@ -1,0 +1,164 @@
+.tdb-root {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #eaf2fb;
+    min-height: 100vh;
+    /* Remove padding for perfect centering, or keep if you want spacing */
+    /* padding: 32px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tdb-center-wrapper {
+    width: 100%;
+    max-width: 1100px; /* Adjust as needed */
+    padding: 32px;
+    box-sizing: border-box;
+    /* Optional: add min-height for vertical centering with padding */
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tdb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.tdb-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 2rem;
+}
+.tdb-date {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.tdb-sub {
+    color: #6b7280;
+    font-size: 1rem;
+}
+.tdb-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #cfd8dc;
+}
+.tdb-main {
+    display: flex;
+    margin-top: 32px;
+    gap: 32px;
+}
+.tdb-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px #e3e7ee;
+    padding: 24px;
+}
+.tdb-bookings {
+    width: 420px;
+}
+.tdb-bookings table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+.tdb-bookings th, .tdb-bookings td {
+    text-align: left;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+.tdb-bookings th {
+    color: #6b7280;
+    font-weight: 600;
+}
+.tdb-btn {
+    background: #1d4ed8;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.tdb-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 280px;
+}
+.tdb-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.tdb-profile-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #b3c2e1;
+    margin-bottom: 8px;
+}
+.tdb-profile-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.tdb-profile-role,
+.tdb-profile-status {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+.tdb-edit-btn {
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 8px 0;
+    width: 100%;
+    color: #1d4ed8;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tdb-profile-edit input {
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+}
+.tdb-profile-edit button {
+    margin-right: 8px;
+    margin-top: 4px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #1d4ed8;
+    color: #fff;
+    cursor: pointer;
+}
+.tdb-clients ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tdb-clients li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 1rem;
+}
+.tdb-clients li:last-child {
+    border-bottom: none;
+}
+.tdb-empty-card {
+    margin-top: 32px;
+    background: #fff;
+    border-radius: 16px;
+    min-height: 100px;
+    box-shadow: 0 2px 8px #e3e7ee;
+}

@@ -1,0 +1,78 @@
+.form-popup-backdrop {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+.form-popup {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 420px;
+    z-index: 1000;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin-top: 5vh; /* Adds space from top */
+    margin-bottom: 5vh; /* Adds space from bottom */
+}
+
+.form-popup h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.form-popup label {
+    display: block;
+    margin: 1rem 0 0.35rem 0;
+    font-weight: 500;
+}
+
+.form-popup input,
+.form-popup select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #cfd8dc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fafbfc;
+}
+
+.form-popup .btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: #19224d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form-popup .btn.cancel {
+    background: #e0e0e0;
+    color: #222;
+    margin-top: 0.5rem;
+}
+
+.form-popup .btn:hover:not(.cancel) {
+    background: #26317a;
+}
+
+.form-popup .btn.cancel:hover {
+    background: #bdbdbd;
+}
