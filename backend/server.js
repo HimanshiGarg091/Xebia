@@ -9,10 +9,10 @@ const path = require('path');
 const http = require('http'); // <-- Added for Socket.IO
 require('dotenv').config();
 
-
+uri="mongodb+srv://garghimanshi093:mindMend@cluster0.mafkrsd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 const JWT_SECRET = process.env.JWT_SECRET || 'supersecretkey';
-const MONGO_URI = process.env.MONGO_URI 
+const MONGO_URI = process.env.MONGO_URI || uri;
 
 const app = express();
 
@@ -27,6 +27,8 @@ const io = new Server(server, {
   }
 });
 
+const therapistRoutes = require('./routes/therapist');
+app.use('/api/therapist', therapistRoutes);
 
 
 app.use(cors());
